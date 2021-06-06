@@ -75,7 +75,7 @@ $ cd my-sample-app
 ```
 
 npm init コマンドを使用して、アプリケーション用の package.json ファイルを作成します。  
-package.json について詳しくは、以下の記事等を参照してください。
+package.json について詳しくは、以下の記事等を参照してください。  
 [【初心者向け】NPM と package.json を概念的に理解する](https://qiita.com/righteous/items/e5448cb2e7e11ab7d477#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8)
 
 ```sh
@@ -83,7 +83,7 @@ package.json について詳しくは、以下の記事等を参照してくだ�
 $ npm init
 ```
 
-コマンド実行時、アプリケーションの名前やバージョンなど、いくつかの項目の入力が要求されますが、全てデフォルトで大丈夫です。
+コマンド実行時、アプリケーションの名前やバージョンなど、いくつかの項目の入力が要求されますが、全てデフォルトで大丈夫です。  
 全ての項目で Enter(Windows) / RETURN(Mac) キーを押して設定を完了してください。
 
 設定が完了すると以下のような表示になるかと思います。
@@ -163,11 +163,11 @@ found 0 vulnerabilities
 
 ```
 
-再度 ls コマンドを実行してみましょう。
+再度 ls コマンドを実行してみましょう。  
 node_modules と package-lock.json というディレクトリ/ファイルが作成されていることがわかります。
 
-これらは Node.js を使用する上で必要となるディレクトリ/ファイルです。
-こちらについても以下の記事等を参照してください。
+これらは Node.js を使用する上で必要となるディレクトリ/ファイルです。  
+こちらについても以下の記事等を参照してください。  
 [【初心者向け】NPM と package.json を概念的に理解する](https://qiita.com/righteous/items/e5448cb2e7e11ab7d477#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8)
 
 ```sh
@@ -181,7 +181,7 @@ node_modules		package-lock.json	package.json
 ### 5. app.js を作成
 
 では、アプリを実装していきましょう。
-Visual Studio Code で my-sample-app ディレクトリを開きます。
+Visual Studio Code で my-sample-app ディレクトリを開きます。  
 my-sample-app ディレクトリ直下に、app.js というファイルを作成します。
 
 作成した app.js を以下のように編集します。
