@@ -1,26 +1,70 @@
 # Node.js サンプルアプリ作成 チュートリアル
 
+- [Node.js サンプルアプリ作成 チュートリアル](#nodejs-サンプルアプリ作成-チュートリアル)
+  - [概要](#概要)
+  - [対象者](#対象者)
+  - [手順](#手順)
+    - [1. Visual Studio Code のインストール](#1-visual-studio-code-のインストール)
+    - [2. Node.js のインストール](#2-nodejs-のインストール)
+    - [3. 初期設定](#3-初期設定)
+    - [4. express のインストール](#4-express-のインストール)
+    - [5. app.js を作成](#5-appjs-を作成)
+    - [6. アプリを起動](#6-アプリを起動)
+
 ## 概要
 
 本チュートリアルは、Node.js を使って Web アプリを作成するものです。
+localhost でアプリを立ち上げ、ブラウザで Hello world と表示されることを目標とします。
 
-## 目標
+## 対象者
 
-localhost でアプリを立ち上げ、ブラウザで Hello world と表示されることを確認します。
+以下のような方を対象としています。
 
-## 目次
+- 初めてアプリケーションを作成する
+- Node.js でのアプリの作り方を知りたい
 
 ## 手順
 
-### vs code のインストール
+### 1. Visual Studio Code のインストール
 
-TBD
+Visual Studio Code は Microsoft が提供している軽量なコードエディターです。
+こちらの[公式サイト](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)からダウンロードしてください。
 
-### Node.js のインストール
+### 2. Node.js のインストール
 
-TBD
+Node.js とは JavaScript を動かすための環境のことです。
+こちらの[公式サイト](https://nodejs.org/ja/download/)からダウンロードしてください。
 
-### 初期設定
+LTS(推奨版)の中から OS にあったインストーラをダウンロードしてください。
+インストーラを実行し、デフォルトの設定のまま、インストールを行ってください。
+
+画面キャプチャを確認したい方は、以下の記事等を参照してください。
+[Node.js をインストールする](https://qiita.com/sefoo0104/items/0653c935ea4a4db9dc2b)
+
+コマンドプロンプト(Windows) / ターミナル(Mac) を開き、以下コマンドを実行してください。
+バージョンの値が表示されれば OK です。
+
+```sh
+$ node --version
+v12.18.3
+# 表示されるバージョンは個人の環境に依存しますので、同じである必要はありません
+```
+
+合わせて npm がインストールされていることを確認します。
+
+> npm(node package manager) とは Node.js のパッケージを管理するための CLI ツールです。
+> 詳細は以下の記事等を参照してください。
+> [【初心者向け】NPM と package.json を概念的に理解する](https://qiita.com/righteous/items/e5448cb2e7e11ab7d477#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8)
+
+以下コマンドを実行して、バージョンの値が表示されれば OK です。
+
+```sh
+$ npm --version
+6.14.6
+# 表示されるバージョンは個人の環境に依存しますので、同じである必要はありません
+```
+
+### 3. 初期設定
 
 サンプルアプリ用ディレクトリを作成します。
 
@@ -93,7 +137,7 @@ $ ls
 package.json
 ```
 
-### express のインストール
+### 4. express のインストール
 
 続いて express をインストールしていきます。
 以下コマンドを実行してください。
@@ -116,7 +160,6 @@ npm WARN my-sample-app@1.0.0 No repository field.
 added 50 packages from 37 contributors and audited 50 packages in 2.509s
 found 0 vulnerabilities
 
-＄
 ```
 
 再度 ls コマンドを実行してみましょう。
@@ -132,7 +175,7 @@ node_modules		package-lock.json	package.json
 
 これで準備は完了です。
 
-### app.js を作成
+### 5. app.js を作成
 
 では、アプリを実装していきましょう。
 Visual Studio Code で my-sample-app ディレクトリを開きます。
@@ -158,7 +201,7 @@ app.listen(port, () => {
 });
 ```
 
-### アプリを起動
+### 6. アプリを起動
 
 アプリを起動してみましょう。
 以下コマンドを実行してください。
@@ -172,7 +215,7 @@ $ node app.js
 
 ```sh
 # コマンド実行時の表示例
-my-sample-app $ node app.js
+$ node app.js
 Example app listening at http://localhost:3000
 ```
 
